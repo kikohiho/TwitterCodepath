@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '045D3A04799FE21D213BBAB2'
-               BlueprintName = 'BDBOAuth1Manager'
+               BlueprintIdentifier = 'F0B97FF3EEDAE8FBF8C6254F'
+               BlueprintName = 'DoneHUD'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'BDBOAuth1Manager.framework'>
+               BuildableName = 'DoneHUD.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

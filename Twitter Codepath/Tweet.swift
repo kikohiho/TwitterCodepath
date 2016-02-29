@@ -15,6 +15,8 @@ class Tweet: NSObject {
     var retweetCount: Int?
     var favoritesCount: Int?
     var readDate: NSTimeInterval?
+    var retweetState: Bool?
+    var tweetId: String?
     
     init(dictionary: NSDictionary) {
         
@@ -36,6 +38,9 @@ class Tweet: NSObject {
             readDate = timestamp?.timeIntervalSinceNow
         }
         
+        retweetState = dictionary["retweeted"] as? Bool
+        
+        tweetId = dictionary["id_str"] as? String
         
         
     }

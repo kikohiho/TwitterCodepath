@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DoneHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Twitter Codepath.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +32,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>302143F4F9F5F1CD122CF8855D28ABB4</key>
+		<key>445B3D47256376A8FB06D383FDBEA0C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>445B3D47256376A8FB06D383FDBEA0C4</key>
+		<key>59C5F3A8255C4312379EAB5B0B989D62</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A00D90FBC7A11A4326D4CDF6EABB27C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
