@@ -9,24 +9,27 @@
 import UIKit
 import DoneHUD
 
-class TweetComposeControllerViewController: UIViewController {
+class TweetComposeControllerViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var twitterusernameLabel: UILabel!
     @IBOutlet weak var tweettextView: UITextView!
     
-    var user: User?
-    var replyhandle:String?
+    var replyhandle: String?
+    var tweetId: String?
+    var isReply: Bool?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let profileURL = user?.profileURL
-        /** profileImage.setImageWithURL(profileURL!)
+        let profileURL = User.currentUser!.profileURL
+        profileImage.setImageWithURL(profileURL!)
         
-        usernameLabel.text = user?.name as? String
-        twitterusernameLabel.text = user?.screenname as? String
-        */
+        usernameLabel.text = User.currentUser!.name
+        twitterusernameLabel.text = User.currentUser!.screenname 
+        
+        tweettextView.delegate = self
+        tweettextView.becomeFirstResponder()
         
         // Do any additional setup after loading the view.
         
@@ -42,7 +45,11 @@ class TweetComposeControllerViewController: UIViewController {
     @IBAction func postTweet(sender: AnyObject) {
         DoneHUD.showInView(self.view, message: "Done")
         
-        TwitterClient.sharedInstance.composeTweet(tweettextView.text!)
+        if isReply == true {
+            TwitterClient.sharedInstance.replyTweet(tweetId, userID: "\(tweettextView.text)")
+        } else {
+            TwitterClient.sharedInstance.composeTweet(tweettextView.text)
+        }
         
         replyhandle = ""
         let time = dispatch_time(dispatch_time_t(DISPATCH_TIME_NOW), 2 * Int64(NSEC_PER_SEC))
