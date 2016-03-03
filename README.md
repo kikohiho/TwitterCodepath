@@ -9,10 +9,10 @@ Time spent: **8** hours spent in total
 The following **required** functionality is completed:
 
 - [X] User can sign in using OAuth login flow
-- [ ] User can view last 20 tweets from their home timeline
+- [X] User can view last 20 tweets from their home timeline
 - [X] The current signed in user will be persisted across restarts
-- [ ] In the home timeline, user can view tweet with the user profile picture, username, tweet text, and timestamp.
-- [ ] Retweeting and favoriting should increment the retweet and favorite count.
+- [X] In the home timeline, user can view tweet with the user profile picture, username, tweet text, and timestamp.
+- [X] Retweeting and favoriting should increment the retweet and favorite count.
 
 The following **optional** features are implemented:
 
@@ -64,9 +64,9 @@ Time spent: **12** hours spent in total
 The following **required** functionality is completed:
 
 - [X] Tweet Details Page: User can tap on a tweet to view it, with controls to retweet, favorite, and reply.
-- [ ] Profile page:
-   - [ ] Contains the user header view
-   - [ ] Contains a section with the users basic stats: # tweets, # following, # followers
+- [X] Profile page:
+   - [X] Contains the user header view
+   - [X] Contains a section with the users basic stats: # tweets, # following, # followers
 - [X] Home Timeline: Tapping on a user image should bring up that user's profile page
 - [X] Compose Page: User can compose a new tweet by tapping on a compose button.
 
@@ -97,23 +97,23 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/CgQPR3Y.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/2HgyKWn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 Issues:
 1. For some reason the Favorites Count always returns 0 
-2. DetailsView AutoLayout not functional 
-3. Compose page User Data not functional 
-4. Profile Page links non functional 
+2. Profile View Text Alignment and it's autolayout not functioning well
+3. Compose page should indicate when it is replying or posting 
+4. Animation for the retweets and favorites
 
 
 Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2016] [Ricardo Vila]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
